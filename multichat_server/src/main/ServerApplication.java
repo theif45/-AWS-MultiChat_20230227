@@ -16,7 +16,7 @@ public class ServerApplication {
 		
 		try {
 			ServerSocket serverSocket = new ServerSocket(9090);
-			
+
 			while(true){
 				Socket socket = serverSocket.accept();
 				ConnectedSocket connectedSocket = new ConnectedSocket(socket);
